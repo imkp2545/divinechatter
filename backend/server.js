@@ -26,10 +26,11 @@ app.use(hpp());
 
 app.use(
   cors({
-    origin: process.env.CLIENT_URL,
+    origin: true,
     credentials: true
   })
 );
+
 
 if (process.env.NODE_ENV !== "production") app.use(morgan("dev"));
 
