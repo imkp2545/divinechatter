@@ -1,0 +1,36 @@
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.no-products-message {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.no-products-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.no-products-message h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.75rem;
+  color: #3e2723;
+  margin-bottom: 0.5rem;
+}
+
+.no-products-message p {
+  color: #8b7355;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}

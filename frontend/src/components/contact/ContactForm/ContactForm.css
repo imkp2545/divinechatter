@@ -1,0 +1,21 @@
+.contact-form {
+  background: white;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.contact-form textarea.input-divine {
+  resize: vertical;
+  min-height: 150px;
+}
+
+@media (max-width: 640px) {
+  .contact-form {
+    padding: 2rem 1.5rem;
+  }
+}

@@ -1,0 +1,153 @@
+.coming-soon-banner {
+  position: relative;
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #a29556 0%, #5e502e 50%, #e4c471 100%);
+  overflow: hidden;
+  margin: 5rem 0;
+}
+
+.banner-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(201, 169, 97, 0.15) 0%,
+    transparent 70%
+  );
+  animation: glow-pulse 4s ease-in-out infinite;
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.banner-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem;
+  background: rgba(240, 214, 154, 0.05);
+  border: 2px solid rgba(219, 198, 147, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.banner-icon {
+  position: relative;
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #C9A961 0%, #A68A4D 100%);
+  border-radius: 50%;
+  box-shadow: 0 8px 24px rgba(201, 169, 97, 0.4);
+}
+
+.icon-ring {
+  position: absolute;
+  inset: -10px;
+  border: 2px solid rgba(201, 169, 97, 0.3);
+  border-radius: 50%;
+  animation: ring-expand 3s ease-in-out infinite;
+}
+
+@keyframes ring-expand {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.6;
+  }
+}
+
+.clock-icon {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.banner-text {
+  flex: 1;
+}
+
+.banner-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  color: #FAEED1;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.banner-subtitle {
+  font-family: 'Lora', serif;
+  font-size: 1.125rem;
+  color: #E8D4A0;
+  line-height: 1.6;
+}
+
+.banner-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background: white;
+  color: #3D2817;
+  border-radius: 12px;
+  text-decoration: none;
+  font-family: 'Lora', serif;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.banner-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(250, 238, 209, 0.3);
+}
+
+@media (max-width: 1024px) {
+  .banner-content {
+    gap: 2rem;
+  }
+
+  .banner-title {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .coming-soon-banner {
+    padding: 3rem 0;
+  }
+
+  .banner-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .banner-title {
+    font-size: 1.5rem;
+  }
+
+  .banner-subtitle {
+    font-size: 1rem;
+  }
+
+  .banner-cta {
+    width: 100%;
+    justify-content: center;
+  }
+}

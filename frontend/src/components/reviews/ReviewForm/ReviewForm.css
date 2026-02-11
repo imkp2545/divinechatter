@@ -1,0 +1,75 @@
+.review-form {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+.review-form-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  color: #3e2723;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  font-weight: 500;
+  color: #5c4033;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.rating-input {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.star-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.2s ease;
+}
+
+.star-btn:hover {
+  transform: scale(1.2);
+}
+
+.star-btn .star {
+  font-size: 2rem;
+  color: #e8dcc4;
+  transition: all 0.2s ease;
+}
+
+.star-btn .star.filled {
+  color: #d4af37;
+  fill: #d4af37;
+}
+
+.char-count {
+  text-align: right;
+  font-size: 0.875rem;
+  color: #8b7355;
+  margin-top: 0.5rem;
+}
+
+.error-text {
+  display: block;
+  color: #dc2626;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+.review-note {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #8b7355;
+  margin-top: 1rem;
+  font-style: italic;
+}

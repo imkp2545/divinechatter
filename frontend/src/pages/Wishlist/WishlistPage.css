@@ -1,0 +1,22 @@
+.wishlist-page {
+  padding: 6rem 0 4rem;
+  min-height: 100vh;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.wishlist-footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 3rem;
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+@media (max-width: 768px) {
+  .wishlist-page {
+    padding: 5rem 0 3rem;
+  }
+}

@@ -1,0 +1,113 @@
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 1rem 2rem;
+  background: linear-gradient(135deg, #fdfbf7 0%, #f5efe7 100%);
+  background-image: radial-gradient(
+      circle at 20% 50%,
+      rgba(212, 175, 55, 0.05) 0%,
+      transparent 50%
+    ),
+    radial-gradient(circle at 80% 80%, rgba(212, 175, 55, 0.05) 0%, transparent 50%);
+}
+
+.auth-container {
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  align-items: center;
+  padding: 0 0.5rem;
+  box-sizing: border-box;
+}
+
+.auth-brand {
+  text-align: center;
+}
+
+.auth-logo {
+  font-size: 3.8rem;
+  margin-bottom: 0.8rem;
+  filter: drop-shadow(0 4px 8px rgba(212, 175, 55, 0.3));
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.auth-brand-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #3e2723;
+  margin-bottom: 0.4rem;
+  line-height: 1.2;
+}
+
+.auth-brand-tagline {
+  color: #d4af37;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* ============================
+   📱 Mobile Optimizations
+============================ */
+
+@media (max-width: 768px) {
+  .auth-page {
+    padding: 4.5rem 1rem 1.5rem;
+  }
+
+  .auth-logo {
+    font-size: 3.2rem;
+  }
+
+  .auth-brand-title {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-page {
+    padding: 4rem 0.8rem 1.2rem;
+  }
+
+  .auth-container {
+    gap: 1.4rem;
+  }
+
+  .auth-logo {
+    font-size: 2.8rem;
+  }
+
+  .auth-brand-title {
+    font-size: 1.4rem;
+  }
+
+  .auth-brand-tagline {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+  }
+}
+
+/* Very small phones (320px width) */
+@media (max-width: 360px) {
+  .auth-logo {
+    font-size: 2.4rem;
+  }
+
+  .auth-brand-title {
+    font-size: 1.2rem;
+  }
+}

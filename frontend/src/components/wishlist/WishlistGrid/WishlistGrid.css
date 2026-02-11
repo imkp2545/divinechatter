@@ -1,0 +1,63 @@
+.wishlist-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* ---------------- LOADING STATE ---------------- */
+
+.wishlist-loading,
+.empty-wishlist {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+/* Professional Spinner */
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3e5d8;
+  border-top: 5px solid #3e2723;
+  border-radius: 50%;
+  margin: 0 auto 1.5rem;
+  animation: spin 0.8s linear infinite;
+}
+
+.wishlist-loading p {
+  font-size: 1rem;
+  color: #8b7355;
+  letter-spacing: 0.5px;
+}
+
+/* Spinner Animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ---------------- EMPTY STATE ---------------- */
+
+.empty-icon {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  color: #3e2723;
+  opacity: 0.6;
+  display: flex;
+  justify-content: center;
+}
+
+.empty-wishlist h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.75rem;
+  color: #3e2723;
+  margin-bottom: 0.5rem;
+}
+
+.empty-wishlist p {
+  color: #8b7355;
+  font-size: 1rem;
+}
